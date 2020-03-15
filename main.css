@@ -1,5 +1,6 @@
 
-body {font-family: 'Roboto', sans-serif;}
+body {font-family: 'Roboto', sans-serif;
+background-color:#E8E8E8;}
 
 /* Full-width input fields */
 input[type=text], input[type=password] {
