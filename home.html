@@ -3,19 +3,71 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
 
-<h2>lewra Point Login</h2>
+<h2>Access Point Home</h2>
 <table align="center">
 <tr></tr>
 <tr>
 <td>
-<button style="width:auto;">Set Up</button>
+
+
+<div class="w3-container">
+	<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Set Up</button>
+
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom">
+      <header class="w3-container" style="background-color: #ed2553;color:white;"> 
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-display-topright">X</span>
+        <h2>Set up</h2>
+      </header>
+      <div class="w3-container">
+        <button style="background-color: #179c52;">Router 1</button>
+		<button style="background-color: #179c52;">Router 2</button>
+		<button style="background-color: #179c52;">Fan 1</button>
+		<button style="background-color: #179c52;">Light 1</button>
+		
+      </div>
+	  <hr>
+      <footer class="w3-container w3-white">
+        <button>Scan</button>
+      </footer>
+    </div>
+  </div>
+</div>
+
 </td>
+<td></td>
 <td>
-<button style="width:auto;">Add Board</button>
+<div class="w3-container">
+	<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Add Board</button>
+
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom">
+      <header class="w3-container" style="background-color: #ed2553;color:white;"> 
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-display-topright">X</span>
+        <h2>Set up</h2>
+      </header>
+      <div class="w3-container">
+        <button style="background-color: #179c52;">Router 1</button>
+		<button style="background-color: #179c52;">Router 2</button>
+		<button style="background-color: #179c52;">Fan 1</button>
+		<button style="background-color: #179c52;">Light 1</button>
+		
+      </div>
+	  <hr>
+      <footer class="w3-container w3-white">
+        <button>Scan</button>
+      </footer>
+    </div>
+  </div>
+</div>
+
 </td>
 </tr>
 </table>
