@@ -23,7 +23,7 @@
       <header class="w3-container" style="background-color: #ed2553;color:white;"> 
         <span onclick="document.getElementById('id01').style.display='none'" 
         class="w3-button w3-display-topright">X</span>
-        <h2>Set up</h2>
+        <h2>Available Devices</h2>
       </header>
       <div class="w3-container">
         <button style="background-color: #179c52;">Router 1</button>
@@ -44,25 +44,28 @@
 <td></td>
 <td>
 <div class="w3-container">
-	<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Add Board</button>
+	<button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Add Board</button>
 
-  <div id="id01" class="w3-modal">
+  <div id="id02" class="w3-modal">
     <div class="w3-modal-content w3-animate-zoom">
       <header class="w3-container" style="background-color: #ed2553;color:white;"> 
-        <span onclick="document.getElementById('id01').style.display='none'" 
+        <span onclick="document.getElementById('id02').style.display='none'" 
         class="w3-button w3-display-topright">X</span>
-        <h2>Set up</h2>
+        <h2>New Board</h2>
       </header>
       <div class="w3-container">
-        <button style="background-color: #179c52;">Router 1</button>
-		<button style="background-color: #179c52;">Router 2</button>
-		<button style="background-color: #179c52;">Fan 1</button>
-		<button style="background-color: #179c52;">Light 1</button>
-		
+
+		<label for="uname"><b>Board Id</b></label>
+      <input type="text" placeholder="Enter Board Id" name="uname" id="uname" value= "" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" id="pass" value="" required>
+	   
+	   <button style="background-color: #179c52;">Add board to Config</button>
       </div>
 	  <hr>
       <footer class="w3-container w3-white">
-        <button>Scan</button>
+        <button>Scan Qr Code</button>
       </footer>
     </div>
   </div>
