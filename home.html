@@ -26,10 +26,17 @@
         <h2>Available Devices</h2>
       </header>
       <div class="w3-container">
-        <button style="background-color: #179c52;">Router 1</button>
-		<button style="background-color: #179c52;">Router 2</button>
-		<button style="background-color: #179c52;">Fan 1</button>
-		<button style="background-color: #179c52;">Light 1</button>
+        <button style="background-color: #179c52;" onclick="toggle1()">Router 1</button>
+		<input type="password" placeholder="Enter Password" name="psw" id="pass1" value="" style="display:none" required>
+		
+		<button style="background-color: #179c52;" onclick="toggle2()">Router 2</button>
+		<input type="password" placeholder="Enter Password" name="psw" id="pass2" value="" style="display:none" required>
+		
+		<button style="background-color: #179c52;" onclick="toggle3()">Fan 1</button>
+		<input type="password" placeholder="Enter Password" name="psw" id="pass3" value="" style="display:none" required>
+		
+		<button style="background-color: #179c52;" onclick="toggle4()">Light 1</button>
+		<input type="password" placeholder="Enter Password" name="psw" id="pass4" value="" style="display:none" required>
 		
       </div>
 	  <hr>
@@ -74,6 +81,44 @@
 </td>
 </tr>
 </table>
+
+<script>
+function toggle1() {
+  var x = document.getElementById("pass1");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+} 
+
+function toggle2() {
+  var x = document.getElementById("pass2");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+} 
+
+function toggle3() {
+  var x = document.getElementById("pass3");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+} 
+
+function toggle4() {
+  var x = document.getElementById("pass4");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+} 
+</script>
 
 </body>
 </html>
